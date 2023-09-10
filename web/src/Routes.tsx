@@ -7,13 +7,21 @@
 // 'src/pages/HomePage/HomePage.js'         -> HomePage
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
-import { Router, Route } from '@redwoodjs/router'
+import { Set, Router, Route } from '@redwoodjs/router'
+
+import ScaffoldLayout from 'src/layouts/ScaffoldLayout'
 
 import { useAuth } from './auth'
 
 const Routes = () => {
   return (
     <Router useAuth={useAuth}>
+      <Set wrap={ScaffoldLayout} title="HeatPumpConversions" titleTo="heatPumpConversions" buttonLabel="New HeatPumpConversion" buttonTo="newHeatPumpConversion">
+        <Route path="/heat-pump-conversions/new" page={HeatPumpConversionNewHeatPumpConversionPage} name="newHeatPumpConversion" />
+        <Route path="/heat-pump-conversions/{id:Int}/edit" page={HeatPumpConversionEditHeatPumpConversionPage} name="editHeatPumpConversion" />
+        <Route path="/heat-pump-conversions/{id:Int}" page={HeatPumpConversionHeatPumpConversionPage} name="heatPumpConversion" />
+        <Route path="/heat-pump-conversions" page={HeatPumpConversionHeatPumpConversionsPage} name="heatPumpConversions" />
+      </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
   )

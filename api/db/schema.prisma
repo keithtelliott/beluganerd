@@ -16,3 +16,21 @@ model UserExample {
   email String  @unique
   name  String?
 }
+
+model HeatPumpConversion {
+  id                                     Int      @id @default(autoincrement())
+  authorName                             String
+  authorUserId                           String
+  title                                  String
+  description                            String?
+  commentary                             String?
+  electricityUsageTotalPreHPAnnualKwHr   Float
+  electricityCostTotalPreHPAnnualDollars Float
+  gasUsageTotalPreHPAnnualTherms         Float
+  gasCostTotalPreHPAnnualDollars         Float
+  gasUsageWaterHeaterAnnualTherms        Float
+  gasUsageOtherAnnualTherms              Float
+  furnaceEfficiencyPercent               Float
+  heatPumpCOP                            Float
+  createdAt                              DateTime @default(now())
+}
