@@ -11,15 +11,25 @@
     ]
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2",
     "@clerk/clerk-react": "^4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@nivo/bar": "^0.83.0",
+    "@nivo/core": "^0.83.0",
     "@redwoodjs/auth-clerk-web": "6.2.0",
     "@redwoodjs/forms": "6.2.0",
     "@redwoodjs/router": "6.2.0",
     "@redwoodjs/web": "6.2.0",
+    "babel-plugin-graphql-tag": "^3.3.0",
+    "framer-motion": "^9",
     "humanize-string": "2.1.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@redwoodjs/vite": "6.2.0"
