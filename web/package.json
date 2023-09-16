@@ -19,10 +19,10 @@
     "@emotion/styled": "^11",
     "@nivo/bar": "^0.83.0",
     "@nivo/core": "^0.83.0",
-    "@redwoodjs/auth-clerk-web": "6.2.0",
-    "@redwoodjs/forms": "6.2.0",
-    "@redwoodjs/router": "6.2.0",
-    "@redwoodjs/web": "6.2.0",
+    "@redwoodjs/auth-clerk-web": "6.2.2",
+    "@redwoodjs/forms": "6.2.2",
+    "@redwoodjs/router": "6.2.2",
+    "@redwoodjs/web": "6.2.2",
     "babel-plugin-graphql-tag": "^3.3.0",
     "framer-motion": "^9",
     "humanize-string": "2.1.0",
@@ -32,6 +32,6 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
-    "@redwoodjs/vite": "6.2.0"
+    "@redwoodjs/vite": "6.2.2"
   }
 }

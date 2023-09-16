@@ -46,8 +46,8 @@ const FormNumberSlider = ({
           </SliderTrack>
           <SliderThumb />
         </Slider>
-       </HStack>
-     </FormControl>
+      </HStack>
+    </FormControl>
   )
 }
 
