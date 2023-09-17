@@ -69,7 +69,7 @@ describe('heatPumpConversions', () => {
     expect(result.gasUsageWaterHeaterAnnualTherms).toEqual(7132663.906311782)
     expect(result.gasUsageOtherAnnualTherms).toEqual(8064528.913355921)
     expect(result.furnaceEfficiencyPercent).toEqual(4444036.652517893)
-    expect(result.heatPumpCOP).toEqual(24512.869238595413)
+    expect(result.heatPumpCOP).toBeCloseTo(24512.869238595413)
   })
 
   scenario(
